@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LoginService } from 'src/app/services/login.service';
 import { Users } from 'src/model/Users';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { Users } from 'src/model/Users';
 export class LoginComponent {
   user: Users = new Users('', '');
 
-  constructor(private LoginService: LoginService ){
+  constructor(private LoginService: LoginService, private router: Router){
 
   }
 
@@ -19,7 +20,10 @@ export class LoginComponent {
 
     this.LoginService.login(userData).subscribe(
       response => {
-        console.log("reponse request");
+        console.log("reponse request", response.status);
+        if(response == "200"){
+          this.router.navigate(['/mainScreen']);
+        }
       }
     );
     console.log("valores -> ", this.user);
