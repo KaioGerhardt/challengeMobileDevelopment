@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LoginService } from 'src/app/services/login.service';
 import { Users } from 'src/model/Users';
 import { Router } from '@angular/router';
+import { CalendarEvents } from 'src/model/CalendarEvents';
 
 @Component({
   selector: 'app-root',
@@ -20,9 +21,10 @@ export class LoginComponent {
 
     this.LoginService.login(userData).subscribe(
       response => {
-        console.log("reponse request", response.status);
+        console.log("reponse request", response);
         if(response == "200"){
-          this.router.navigate(['/mainScreen']);
+          console.log("tinha que ter redirecionado");
+          this.router.navigate(['/calendar']);
         }
       }
     );
