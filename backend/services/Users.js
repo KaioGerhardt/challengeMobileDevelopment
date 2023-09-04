@@ -14,7 +14,7 @@ class Users {
         try {
             let userValidate = await this.DatabaseConnection.query(`SELECT idUser, email, name FROM user WHERE email = '${this.email}' AND password = '${this.password}';`);
 
-            if(userValidate != []){
+            if(JSON.stringify(userValidate) != '[]'){
                 let tokenJWT = TokenManager.generateToken(userValidate[0]);
                 returnData = tokenJWT;
             }else{

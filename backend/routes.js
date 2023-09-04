@@ -10,12 +10,12 @@ router.post('/login', async (req, res) => {
             let user = new Users(requestData.email, requestData.password);
             let result = await user.loginValidate();
 
+            console.log("log result -> ", result);
             if(result){
                 TokenManager.saveTokenSession(req, result);
-                console.log("token session -> ", req.session.token);
-                res.status(200).json("200");
+                res.status(200).json({isLoged: true, token: result});
             }else{
-                res.status(401).json("Usuario nao encontrado!");
+                res.status(401).json({isLoged: false});
             }
         }
     }catch(error){

@@ -1,41 +1,43 @@
-import { Component } from '@angular/core';
-import { LoginService } from 'src/app/services/login.service';
+import { Component, OnInit } from '@angular/core';
 import { Users } from 'src/model/Users';
+import { LoginService } from 'src/services/login.service';
 import { Router } from '@angular/router';
-import { CalendarEvents } from 'src/model/CalendarEvents';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-login',
+  templateUrl: './login.page.html',
+  styleUrls: ['./login.page.scss'],
 })
-export class LoginComponent {
+export class LoginPage implements OnInit {
+
   user: Users = new Users('', '');
 
-  constructor(private LoginService: LoginService, private router: Router){
+  constructor(private LoginService: LoginService, private router: Router) {
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
     let jwt = sessionStorage.getItem('jwtToken');
-    if(jwt != null){
+    if (jwt != null) {
       this.router.navigate(['/calendar']);
     }
   }
 
-  login(){
+  login() {
+    console.log("teste");
     let userData = this.user;
 
     this.LoginService.login(userData).subscribe(
       response => {
         console.log("reponse request", response);
-        if(response.isLoged){
+        if (response.isLoged) {
           sessionStorage.setItem('jwtToken', response.token);
           this.router.navigate(['/calendar']);
         }
       },
       error => {
-        if(error.status == 401){
+        if (error.status == 401) {
           alert("Credenciais inválidas");
         }
       }
@@ -43,5 +45,4 @@ export class LoginComponent {
     console.log("valores -> ", this.user);
 
   }
-
 }
