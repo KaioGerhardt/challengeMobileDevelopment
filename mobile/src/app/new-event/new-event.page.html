@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro de Evento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Título do Evento</ion-label>
+    <ion-input [(ngModel)]="newEvent.title" name="titulo" type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Data do Evento</ion-label>
+    <ion-datetime display-format="DD/MM/YYYY HH:mm" [(ngModel)]="newEvent.date" name="data" required></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Descrição</ion-label>
+    <ion-textarea [(ngModel)]="newEvent.description" name="descricao" rows="4" required></ion-textarea>
+  </ion-item>
+
+  <ion-button expand="full" (click)="cadastrarEvento()">Cadastrar</ion-button>
+</ion-content>

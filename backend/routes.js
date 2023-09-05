@@ -24,4 +24,14 @@ router.post('/login', async (req, res) => {
     }
 });
 
+router.get('/calendarEvents', async (req, res) => {
+    try{
+        let requestData = req.body;
+        
+    }catch(error){
+        console.error("Error: ", error);
+        res.status(500).json(error);
+    }
+});
+
 module.exports = router;

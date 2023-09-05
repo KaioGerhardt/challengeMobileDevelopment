@@ -18,7 +18,7 @@ app.use(session({
 }));
 
 const optionsCors = {
-    origin: 'http://localhost:4200',
+    origin: 'http://localhost:8100',
     optionSuccessStatus: 200
 }
 app.use(cors(optionsCors));

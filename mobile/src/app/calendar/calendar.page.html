@@ -4,10 +4,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">calendar</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" scroll="false" style="top: 5px;">
+  <full-calendar [options]="calendarOptions"></full-calendar>
 </ion-content>
+
+<!-- <ion-tabs slot="bottom">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button>
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>Calendário</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs> -->

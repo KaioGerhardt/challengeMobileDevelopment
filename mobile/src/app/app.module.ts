@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { LoginPageModule } from './login/login.module';
+import { CalendarEvents } from 'src/model/CalendarEvents';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { LoginPageModule } from './login/login.module';
     LoginPageModule, 
     HttpClientModule
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, CalendarEvents],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
