@@ -44,6 +44,16 @@ export class CalendarPage implements OnInit, AfterViewInit {
     events: this.getCalendarEvents()
   };
 
+  // handleDateSet(info) {
+  //   const view = info.view.type; // Tipo de visualização atual
+  //   const startDate = info.start; // Data de início da visualização
+  //   const endDate = info.end; // Data de término da visualização
+
+  //   console.log('Tipo de visualização:', view);
+  //   console.log('Data de início:', startDate);
+  //   console.log('Data de término:', endDate);
+  // }
+
   getCalendarEvents() {
     console.log("passa aaqui 1");
     this.CalendarService.getEvents().subscribe(
