@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { CalendarEvents } from 'src/model/CalendarEvents';
+import { CalendarService } from 'src/services/calendar.service';
 
 @Component({
   selector: 'app-new-event',
@@ -8,13 +10,12 @@ import { NavController } from '@ionic/angular';
 })
 export class NewEventPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private CalendarService: CalendarService) { 
+    this.newEvent.date = new Date()
+  }
+  today: Date = new Date();
 
-  newEvent = {
-    title: '',
-    date: '',
-    description: '',
-  };
+  newEvent: CalendarEvents = new CalendarEvents();
 
   ngOnInit() {
   }
@@ -23,9 +24,14 @@ export class NewEventPage implements OnInit {
     // Lógica para cadastrar o evento (pode ser uma chamada a um serviço, etc.)
 
     console.log("dataa -> ", this.newEvent);
+    this.CalendarService.postEvent(this.newEvent).subscribe(
+      response => {
+        console.log("response -> ", response);
+      }
+    )
 
     // Após o cadastro, redireciona para a página do calendário ou outra página desejada
-    this.navCtrl.navigateBack('/calendario');
+    // this.navCtrl.navigateBack('/calendario');
   }
 
 }
