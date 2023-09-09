@@ -1,9 +1,11 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { CalendarOptions } from '@fullcalendar/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { CalendarOptions, CalendarApi } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import { CalendarService } from 'src/services/calendar.service';
 import { CalendarEvents } from 'src/model/CalendarEvents';
 import { Router } from '@angular/router';
+import { FullCalendarComponent } from '@fullcalendar/angular';
+import { EventSourceFuncArg, EventInput } from '@fullcalendar/core';
 
 @Component({
   selector: 'app-calendar',
@@ -11,6 +13,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./calendar.page.scss'],
 })
 export class CalendarPage implements OnInit, AfterViewInit {
+  // @ViewChild('fullcalendar', { static: true }) fullcalendar!: FullCalendarComponent;
+  @ViewChild('fullcalendar') fullcalendar!: FullCalendarComponent;
+  calendarApi!: CalendarApi;
+  monthCalendar!: number;
+  yearCalendar!: number;
 
   constructor(private calendarEvents: CalendarEvents, private CalendarService: CalendarService, private router: Router) { }
 
@@ -40,32 +47,36 @@ export class CalendarPage implements OnInit, AfterViewInit {
     initialView: 'dayGridMonth',
     plugins: [dayGridPlugin],
     height: 'auto',
+    locale: 'pt-br',
     contentHeight: 'auto',
-    events: this.getCalendarEvents()
+    events: this.getCalendarEvents.bind(this),
+    datesSet: this.handleDatesSet.bind(this),
   };
 
-  // handleDateSet(info) {
-  //   const view = info.view.type; // Tipo de visualização atual
-  //   const startDate = info.start; // Data de início da visualização
-  //   const endDate = info.end; // Data de término da visualização
+  handleDatesSet(info: any) {
+    this.calendarApi = info.view.calendar;
+    const currentDate = this.calendarApi.getDate();
+  
+    this.monthCalendar = currentDate.getMonth() + 1; // +1 porque os meses são zero indexados
+    this.yearCalendar = currentDate.getFullYear();
+  }
 
-  //   console.log('Tipo de visualização:', view);
-  //   console.log('Data de início:', startDate);
-  //   console.log('Data de término:', endDate);
-  // }
-
-  getCalendarEvents() {
-    console.log("passa aaqui 1");
-    this.CalendarService.getEvents().subscribe(
-      response => {
-        // return JSON.stringify([]);
-        // return [];
-      }
-    );
-
-    return [
-      { title: "Teste", date: "2023-10-25" }
-
-    ];
+  async getCalendarEvents(arg: EventSourceFuncArg, successCallback: (eventInputs: EventInput[]) => void, failureCallback: (error: Error) => void) {
+    console.log("passa aqui 1");
+  
+    if (this.monthCalendar == undefined || this.yearCalendar == undefined) {
+      const currentDate = new Date();
+      this.monthCalendar = currentDate.getMonth() + 1;
+      this.yearCalendar = currentDate.getFullYear();
+    }
+  
+    try {
+      const response = await this.CalendarService.getEvents(this.monthCalendar, this.yearCalendar).toPromise();
+      console.log("response --> ", response);
+      successCallback(response.data);
+    } catch (error) {
+      console.error("Error fetching calendar events: ", error);
+      // failureCallback(error);
+    }
   }
 }
