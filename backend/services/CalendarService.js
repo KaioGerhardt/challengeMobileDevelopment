@@ -6,15 +6,28 @@ class Calendar{
         this.DatabaseConnection = new Database();
     }
 
-    getEvents(){
+    async getEvents(month, year){
+        let response = null;
         try{
-            this.DatabaseConnection.query(`SELECT `);
+            if(month < 10){
+                month = '0' + month
+            }
+
+            let result = await this.DatabaseConnection.query(`SELECT * FROM events WHERE date >=  '${year}-${month}-01T00:00:00' AND date <= '${year}-${month}-31T23:59:59'`);
+
+            if(result != undefined || result != null){
+                response =  result;
+            }else{
+                response = false;
+            }
 
         }catch(error){
             console.error("ERROR: ", error)
         }finally{
             this.DatabaseConnection.close();
         }
+
+        return response;
     }
 
     newEvent(parameters){
