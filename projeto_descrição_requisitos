@@ -2,6 +2,7 @@ Projeto Desenvolvimento App Mobile "Morama Estética Avançada"
 
 1.	Análise do sistema: 
 Definição junto com o cliente.
+Inicio das tratativas  através da elicitação dos requisitos identificando o maior número possível de requisitos necessários para o desenvolvimento do sistema.
 primeiras tratativas com o cliente: definição das demandas e descrição da "persona", caracterização da atividade fim. AQUI FAZER A DESCRIÇÃO DA PERSONA
 
 (Aqui pressupõe-se que o analista de sistema juntamente com o cliente, definirão as funcionalidades necessárias via coleta de dados para atingir a demanda existente. 
@@ -11,7 +12,13 @@ Possiveis problemas a evitar :  - baixa compreensão do negócio do cliente;
                                 - dificuldades de comunicação com os usuários; 
                                 - mudanças no pessoal envolvido durante o processo; - complexidade do sistema; - não utilização de técnicas adequadas; - falta de ferramentas de apoio; - falta de gerenciamento de requisitos
 
+•	Objetivos do Projeto: 
 
+O projeto a ser desenvolvido objetiva facilitar o agendamento dos clientes da "Morama Estética Avançada" aos procedimentos oferecidos.
+Entende-se que ele possibilitará ao usuário gerenciar sua própria agenda, não necessitando  de  outro colaborador da empresa para atendimento e marcação.
+Do ponto de vista financeiro serão horas de recursos humanos que podem ser direcionados a atividades fim do negócio.
+
+O aplicativo destina-se aos clientes conhecedores das atividades oferecidas pela Estética.
 
 2.	Análise de requisitos:
 Requisitos Funcionais ( Descrições das funcionalidades ou serviços que se espera que o sistema forneça. - Também podem ser documentados os serviços que não serão disponibilizados pelo sistema. -
@@ -22,20 +29,18 @@ Quais são as funcionalidades necessárias? Quais são as necessidades do usuár
 Os Requisitos Não Funcionais: - Tratam-se da descrição das restrições sobre as quais o sistema deve operar. 
 São as restrições sobre os serviços ou as funções oferecidas pelo sistema.
 1. Requisitos de produtos = referem-se ao comportamento do produto. 
+O produto apresentará a possibilidade de agendamento de procedimentos da empresa sem a intervenção de um profissional.
+
 2. Requisitos de processo = são provenientes das políticas e dos padrões organizacionais tanto da empresa, do cliente, como da desenvolvedora de Software.
+ A empresa entende que 
+
 3. Requisitos externos = definidos por entidades diferentes do cliente e da equipe de desenvolvimento, geralmente associados a questões legais ou econômicas. 
 4. Requisitos Estáveis e Voláteis. - Mudanças nos Requisitos ocorrem enquanto eles estão sendo elicitados, analisados, validados e depois do sistema entrar em produção. - 
   Essas mudanças são inevitáveis, o que não significa que o processo de Engenharia de Requisitos adotado tenha sido falho. -
   Elas (as mudanças) resultam da combinação de uma série de fatores como a evolução do entendimento dos analistas, mudança nas prioridades do cliente, mudanças organizacionais, tomada de decisão tardia, entre outras. 
 
 
-•	Objetivos do Projeto: 
 
-O projeto a ser desenvolvido objetiva facilitar o agendamento dos clientes da "Morama Estética Avançada" aos procedimentos oferecidos.
-Entende-se que ele possibilitará ao usuário gerenciar sua própria agenda, não necessitando  de  outro colaborador da empresa para atendimento e marcação.
-Do ponto de vista financeiro serão horas de recursos humanos que podem ser direcionados a atividades fim do negócio.
-
-O aplicativo destina-se aos clientes conhecedores das atividades oferecidas pela Estética.
 
 •	Design:
 - Procurar-se-á que o aplicativo mobile possua uma interface dinâmica, ágil, responsiva e intuitiva. 
