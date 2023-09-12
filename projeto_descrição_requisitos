@@ -42,16 +42,20 @@ A seguir os requisitos não funcionais:
 ·       Todos os agendamentos deverão ser realizados através do aplicativo mobile evitando a sobreposição de agendas.
  
 •  Quanto ao desempenho:??????
-Considerando qu o produto é objetivo e funcional objetiva-se que ele seja rápido e responsivo o suficiente para atender às necessidades dos usuários. 
+Considerando que o produto é objetivo e funcional objetiva-se que ele seja rápido e responsivo o suficiente para atender às necessidades dos usuários. 
 
 •  Quanto a segurança dos dados: 
 Os dados serão guardados utilizando-se de criptografia, gerenciamento de identidade e controle de acesso.
+
 •  Quanto ao Design e usabilidade:
 Procurar-se-á que o aplicativo mobile possua uma interface dinâmica, ágil, responsiva e intuitiva. Que ele leve o usuário a utilização de novas páginas conforme for percebendo o encaminhamento de sua demanda. A navegação será  intuitiva e responderá às dúvidas que por ventura surgirem no desenvolver do processo.  As telas serão atrativas visualmente sem longos textos explanatórios e se utilizarão de poucas imagens em cores suaves, se adequando a missão da empresa que é a de proporcionar ao cliente um momento de lazer e bem-estar.  A intenção é de que se adeque aos diversos tamanhos de tela.  O projeto utilizará de alternâncias de cores às atividades já desenvolvidas, na medida que forem preenchidas para facilitar o entendimento das etapas do processo de agendamento.  As dúvidas que forem percebidas estarão sinalizadas por símbolos de interrogação e consequente caixa de texto orientando no sistema pop-up. Utilizaremos as práticas de usabilidade através de navegabilidade com o uso dos códigos padrão já definidos na web.
+
 •  Quanto a Escalabilidade: 
 Entende-se que os requisitos de escalabilidade devem garantir que o sistema possa crescer para atender ao aumento na demanda sem perda significativa de desempenho e atendendo pelo menos 300 usuários simultâneos.
+
 •  Quanto a Confiabilidade: 
 Atenção especial aos testes para avaliar a consistência do produto. Entende-se que seja possível manter o funcionamento contínuo  por 4 meses sem falhas críticas.
+
 •  Quanto a Manutenibilidade: 
 Ficará acordado em contrato o número e a relevância das manutenções  com vistas a atualizações, correções e melhorias no sistema.
 Há necessidade de definição das equipes e seu papeis dentro do processo de desenvolvimento do software mobile.
@@ -67,7 +71,7 @@ Serão utilizados instrumentos de metodologias ágeis do tipo Kanban.Utilizaremo
 •  Quanto às Funcionalidades Essenciais:
 Serão utilizados links de acesso de integração as páginas de "Home, Agendamento, busca (______?_____) e cadastro, além de um acesso para aplicativo de mensagens instantâneas/ redes sociais? ( colocar?_________)
  
-•  Quanto a acessibilidade e engine: nosso produto nao prevê acessibilidade nem mecanismos de busca.
+•  Quanto a acessibilidade e engine: nosso produto não prevê acessibilidade nem mecanismos de busca.
 
 •  Quanto à testagem e desenvolvimento do produto: A testagem será realizada em cada fase do desenvolvimento do processo junto a clientela, na intenção de evitar retrabalho e perda de foco na demanda do cliente, possibilitando adendos em número descrito em contrato e acordado em cronograma.
 
@@ -75,5 +79,5 @@ Serão utilizados links de acesso de integração as páginas de "Home, Agendame
 Será firmado um contrato de desenvolvimento de aplicativo que comporte o atendimento das demandas do usuário, testagem e ajustes no período acordado em cronograma definido de comum acordo.
 
 •  Quanto a Hospedagem e Infraestrutura: considerando o aplicativo como um produto simples sem necessidade de armazenamento e serviços de
-nuvem sera hospedado em máquina local. Será usada a capacidade de armazenamento local do dispositivo móvel.
+nuvem será hospedado em máquina local. Será usada a capacidade de armazenamento local do dispositivo móvel.
 
