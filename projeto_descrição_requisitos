@@ -41,62 +41,39 @@ A seguir os requisitos não funcionais:
 ·       Deve disponibilizar calendário com dias e horários para atendimento.
 ·       Todos os agendamentos deverão ser realizados através do aplicativo mobile evitando a sobreposição de agendas.
  
-Quanto ao desempenho:??????
-Esses requisitos definem como o sistema deve funcionar em termos de tempo de resposta, throughput e eficiência. Eles garantem que o sistema seja rápido e responsivo o suficiente para atender às necessidades dos usuários. Exemplo: "O sistema deve ser capaz de processar 100 transações por segundo.
+•  Quanto ao desempenho:??????
+Considerando qu o produto é objetivo e funcional objetiva-se que ele seja rápido e responsivo o suficiente para atender às necessidades dos usuários. 
 
-·       Quanto a segurança dos dados: Os dados serão guardados utilizando-se de criptografia, gerenciamento de identidade e controle de acesso.
-·   	Quanto ao Design e usabilidade:  Procurar-se-á que o aplicativo mobile possua uma interface dinâmica, ágil, responsiva e intuitiva. Que ele leve o usuário a utilização de novas páginas conforme for percebendo o encaminhamento de sua demanda. A navegação será  intuitiva e responderá às dúvidas que por ventura surgirem no desenvolver do processo.  As telas serão atrativas visualmente sem longos textos explanatórios e se utilizarão de poucas imagens em cores suaves, se adequando a missão da empresa que é a de proporcionar ao cliente um momento de lazer e bem-estar.  A intenção é de que se adeque aos diversos tamanhos de tela.  O projeto utilizará de alternâncias de cores às atividades já desenvolvidas, na medida que forem preenchidas para facilitar o entendimento das etapas do processo de agendamento.  As dúvidas que forem percebidas estarão sinalizadas por símbolos de interrogação e consequente caixa de texto orientando no sistema pop-up. Utilizaremos as práticas de usabilidade através de navegabilidade com o uso dos códigos padrão já definidos na web.
-·   	Quanto a Escalabilidade: Entende-se que os requisitos de escalabilidade devem garantir que o sistema possa crescer para atender ao aumento na demanda sem perda significativa de desempenho e atendendo pelo menos 300 usuários simultâneos.
-·   	Quanto a Confiabilidade: Atenção especial aos testes para avaliar a consistência do produto. Entende-se que seja possível manter o funcionamento contínuo  por 4 meses sem falhas críticas.
-·   	Quanto a Manutenibilidade: Ficará acordado em contrato o número e a relevância das manutenções  com vistas a atualizações, correções e melhorias no sistema.
-
-QUAIS TECNOLOGIA UTILIZAMOS PARA EXECUTAR O PROJETO? NODE.JS, ANGULAR E ....
-
+•  Quanto a segurança dos dados: 
+Os dados serão guardados utilizando-se de criptografia, gerenciamento de identidade e controle de acesso.
+•  Quanto ao Design e usabilidade:
+Procurar-se-á que o aplicativo mobile possua uma interface dinâmica, ágil, responsiva e intuitiva. Que ele leve o usuário a utilização de novas páginas conforme for percebendo o encaminhamento de sua demanda. A navegação será  intuitiva e responderá às dúvidas que por ventura surgirem no desenvolver do processo.  As telas serão atrativas visualmente sem longos textos explanatórios e se utilizarão de poucas imagens em cores suaves, se adequando a missão da empresa que é a de proporcionar ao cliente um momento de lazer e bem-estar.  A intenção é de que se adeque aos diversos tamanhos de tela.  O projeto utilizará de alternâncias de cores às atividades já desenvolvidas, na medida que forem preenchidas para facilitar o entendimento das etapas do processo de agendamento.  As dúvidas que forem percebidas estarão sinalizadas por símbolos de interrogação e consequente caixa de texto orientando no sistema pop-up. Utilizaremos as práticas de usabilidade através de navegabilidade com o uso dos códigos padrão já definidos na web.
+•  Quanto a Escalabilidade: 
+Entende-se que os requisitos de escalabilidade devem garantir que o sistema possa crescer para atender ao aumento na demanda sem perda significativa de desempenho e atendendo pelo menos 300 usuários simultâneos.
+•  Quanto a Confiabilidade: 
+Atenção especial aos testes para avaliar a consistência do produto. Entende-se que seja possível manter o funcionamento contínuo  por 4 meses sem falhas críticas.
+•  Quanto a Manutenibilidade: 
+Ficará acordado em contrato o número e a relevância das manutenções  com vistas a atualizações, correções e melhorias no sistema.
 Há necessidade de definição das equipes e seu papeis dentro do processo de desenvolvimento do software mobile.
 A validação dos requisitos se dará junto com a equipe de gerenciamento, de front-end e back-end e consequente descrição da funcionalidade do aplicativo mobile.
 As mudanças serão inevitáveis, o que não significa que o processo de Engenharia de Requisitos adotado tenha sido falho.   
 Elas (as mudanças) podem ser percebidas quando da retroalimentação das análises e resultam da combinação de uma série de fatores como a evolução do entendimento dos analistas, mudança nas prioridades do cliente, mudanças organizacionais, tomada de decisão tardia, entre outras.
 
-Quanto ao cronograma e documentação:
+•  Quanto ao cronograma e documentação:
 O período definido como entrega será  dia 17 de setembro de 2023, implicando em funcionalidade incompleta mas descrição total dos eventos que devem ser realizados para conclusão do projeto.
 Serão utilizados instrumentos de metodologias ágeis do tipo Kanban.Utilizaremos check lists para perceber o andamento do processo junto ao cronograma. Existirá uma área remota para acompanhamento e participação do cliente.
+•  Quanto  QUAIS TECNOLOGIA UTILIZAMOS PARA EXECUTAR O PROJETO? NODE.JS, ANGULAR, IONIC E ....
 
-Quanto às Funcionalidades Essenciais:
+•  Quanto às Funcionalidades Essenciais:
 Serão utilizados links de acesso de integração as páginas de "Home, Agendamento, busca (______?_____) e cadastro, além de um acesso para aplicativo de mensagens instantâneas/ redes sociais? ( colocar?_________)
  
-•  TEREMOS ISSO??????  acessibilidade e engine? AGUARDAR EMAIL DO PROFESSOR
- 	Acessibilidade: Garantir que o projeto seja acessível para pessoas com deficiência é uma consideração importante. Isso envolve seguir diretrizes de acessibilidade da Web, como as estabelecidas pelo W3C.
- 	SEO (Otimização de Mecanismos de Busca): O projeto deve ser otimizado para mecanismos de busca (por exemplo, Google). Isso inclui a utilização de palavras-chave relevantes, metadados adequados e outras práticas de SEO.
+•  Quanto a acessibilidade e engine: nosso produto nao prevê acessibilidade nem mecanismos de busca.
 
-Quanto à testagem e desenvolvimento do produto: A testagem será realizada em cada fase do desenvolvimento do processo junto a clientela, na intenção de evitar retrabalho e perda de foco na demanda do cliente, possibilitando adendos em número descrito em contrato e acordado em cronograma.
+•  Quanto à testagem e desenvolvimento do produto: A testagem será realizada em cada fase do desenvolvimento do processo junto a clientela, na intenção de evitar retrabalho e perda de foco na demanda do cliente, possibilitando adendos em número descrito em contrato e acordado em cronograma.
 
 • Quanto a Manutenção e Atualização:
 Será firmado um contrato de desenvolvimento de aplicativo que comporte o atendimento das demandas do usuário, testagem e ajustes no período acordado em cronograma definido de comum acordo.
 
-•  TEREMOS ISSO?????? Quanto a Hospedagem e Infraestrutura: (__________?____________) AGUARDAR EMAIL DO PROFESSOR
-Selecionar um provedor de hospedagem adequado e configurar a infraestrutura necessária para suportar o projeto.
-
-Pesquisa no cha gpt : 
-A necessidade de um provedor para um aplicativo móvel depende do tipo de aplicativo que você está desenvolvendo e de suas
-necessidades de infraestrutura. 
-Um provedor de serviços é uma entidade que fornece recursos de servidor, armazenamento e serviços em nuvem para hospedar e 
-suportar a funcionalidade do seu aplicativo. 
-Aqui estão algumas considerações importantes:
-Aplicativos simples sem necessidade de servidor: Se você está desenvolvendo um aplicativo móvel simples que não requer 
-armazenamento em nuvem ou serviços de servidor, pode não ser necessário um provedor externo.
-
-Você pode usar a capacidade de armazenamento local do dispositivo móvel e não depender de serviços externos.
-Aplicativos que requerem serviços em nuvem: Se o seu aplicativo precisa de recursos que não podem ser fornecidos pelo 
-dispositivo móvel, como armazenamento em nuvem, autenticação de usuários, notificações push, processamento de dados em larga escala, etc., 
-então você pode optar por usar um provedor de serviços em nuvem, como Amazon Web Services (AWS), Microsoft Azure, Google Cloud, Firebase,
-entre outros. Esses provedores oferecem uma ampla variedade de serviços que podem ser usados para dar suporte ao seu aplicativo.
-
-Redução de custos e escalabilidade: Usar um provedor de serviços em nuvem pode ser vantajoso, especialmente em termos de 
-escalabilidade e redução de custos. Você pode escalar seus recursos conforme necessário, pagando apenas pelo que usa, em vez de investir em servidores físicos caros.
-
-Segurança e conformidade: Se o seu aplicativo lida com informações sensíveis ou precisa cumprir regulamentações de segurança, um provedor em nuvem pode oferecer recursos de segurança avançados e conformidade com padrões de segurança.
-
-Manutenção e gerenciamento: Usar um provedor de serviços em nuvem também pode aliviar a carga de gerenciamento de infraestrutura, permitindo que você se concentre no desenvolvimento do aplicativo em si, enquanto o provedor cuida da manutenção e da escalabilidade da infraestrutura.
-
-Em resumo, a necessidade de um provedor de serviços para um aplicativo móvel depende das funcionalidades do aplicativo e das necessidades de infraestrutura. Aplicativos simples podem não precisar de um provedor externo, enquanto aplicativos mais complexos ou que dependem de serviços em nuvem provavelmente se beneficiarão de um provedor de serviços em nuvem para fornecer os recursos necessários para o funcionamento adequado do aplicativo.
+•  Quanto a Hospedagem e Infraestrutura: considerando o aplicativo como um produto simples sem necessidade de armazenamento e serviços de
+nuvem sera hospedado em máquina local. Será usada a capacidade de armazenamento local do dispositivo móvel.
 
