@@ -1,72 +1,83 @@
-Projeto Desenvolvimento App Mobile Estética ______(nome)______.
+Projeto Desenvolvimento App Mobile "Morama Estética Avançada"
+Análise do sistema:
 
-1.	Análise do sistema: 
-Definição junto com o cliente.
-primeiras tratativas com o cliente: definição das demandas e descrição da "persona", caracterização da atividade fim. AQUI FAZER A DESCRIÇÃO DA PERSONA
+Definição junto com o cliente. Primeiras tratativas com o cliente: definição das demandas e descrição da "persona", caracterização da atividade fim.
+Elicitação de requisitos:
+Desenvolvimento Persona:
 
-(Aqui pressupõe-se que o analista de sistema juntamente com o cliente, definirão as funcionalidades necessárias via coleta de dados para atingir a demanda existente. 
-Possiveis problemas a evitar :  - baixa compreensão do negócio do cliente; 
-                                - mudanças no negócio durante o desenvolvimento; 
-                                - falta de envolvimento dos usuários; 
-                                - dificuldades de comunicação com os usuários; 
-                                - mudanças no pessoal envolvido durante o processo; - complexidade do sistema; - não utilização de técnicas adequadas; - falta de ferramentas de apoio; - falta de gerenciamento de requisitos
+(Aqui quadro persona e fotos )
+    "Morama Estética Avançada"
+Empresa especializada em atendimento as necessidades de bem-estar (estética).
+Possui muitos clientes que vem do interior do estado e cidades dos arredores. A demanda em sua maioria é indicação de outras clientes para realização de procedimentos estéticos.
+Necessita manter o cumprimento de uma agenda de horários.
+Não incentiva o agendamento via telefônico. Utiliza até o momento aplicativo de mensagens para agendamento de atendimento.
 
+ 
+Após entrevista presencial e com questionário programado, foram obtidas as necessidades elencadas pelo cliente/empresa:
+1.      Facilitar o agendamento dos procedimentos estéticos para pacientes de outras localidades principalmente.
+2.      Aproveitar sistema de cadastro para facilitar o acesso aos dados dos clientes
+3.      Necessidade de informações sobre o procedimento serão disponibilizadas no momento da confirmação dos agendamentos.
+4.      Compartilhamento de agenda com equipe de profissionais que atendem na estética.
+5.      Disparo de mensagem de confirmação de presença via mensagem.
+ 
+Objetivos do Projeto:
 
-
-2.	Análise de requisitos:
-Requisitos Funcionais ( Descrições das funcionalidades ou serviços que se espera que o sistema forneça. - Também podem ser documentados os serviços que não serão disponibilizados pelo sistema. -
-Esses Requisitos dependem do tipo de Software que será desenvolvido, das solicitações dos usuários e das necessidades de negócio. definição de público-alvo, histórias de usuários e descrição de requisitos. 
-Quais são as funcionalidades necessárias? Quais são as necessidades do usuário? Como o usuário interage no sistema?)
-
-
-Os Requisitos Não Funcionais: - Tratam-se da descrição das restrições sobre as quais o sistema deve operar. 
-São as restrições sobre os serviços ou as funções oferecidas pelo sistema.
-1. Requisitos de produtos = referem-se ao comportamento do produto. 
-2. Requisitos de processo = são provenientes das políticas e dos padrões organizacionais tanto da empresa, do cliente, como da desenvolvedora de Software.
-3. Requisitos externos = definidos por entidades diferentes do cliente e da equipe de desenvolvimento, geralmente associados a questões legais ou econômicas. 
-4. Requisitos Estáveis e Voláteis. - Mudanças nos Requisitos ocorrem enquanto eles estão sendo elicitados, analisados, validados e depois do sistema entrar em produção. - 
-  Essas mudanças são inevitáveis, o que não significa que o processo de Engenharia de Requisitos adotado tenha sido falho. -
-  Elas (as mudanças) resultam da combinação de uma série de fatores como a evolução do entendimento dos analistas, mudança nas prioridades do cliente, mudanças organizacionais, tomada de decisão tardia, entre outras. 
-
-
-•	Objetivos do Projeto: 
-
-O projeto a ser desenvolvido objetiva facilitar o agendamento dos clientes da Estética___________________ aos procedimentos oferecidos.
-Entende-se que ele possibilitará ao usuário gerenciar sua própria agenda, não necessitando  de  outro colaborador da empresa para atendimento e marcação.
+O projeto a ser desenvolvido objetiva facilitar o agendamento dos clientes da "Morama Estética Avançada" aos procedimentos oferecidos.
+Entende-se que ele possibilitará ao usuário gerenciar sua própria agenda, não necessitando de  outro colaborador da empresa para atendimento e marcação.
 Do ponto de vista financeiro serão horas de recursos humanos que podem ser direcionados a atividades fim do negócio.
 
-O aplicativo destina-se aos clientes conhecedores das atividades oferecidas pela Estética ________??___________.
+Baseado nas informações realizou-se consulta aos modelos e propostas existentes no mercado (benchmarketing) objetivando conhecer e poder aprofundar o desenvolvimento do projeto .    	
+          	
+Dentre as necessidades percebidas na coleta de informações, listamos os requisitos funcionais:
+·       Entende-se que deverá possibilitar ao usuário gerenciar sua própria agenda junto a estética, não necessitando de outro colaborador da empresa para atendimento e marcação.
+·       Financeiramente serão horas de recursos humanos que poderão ser direcionados a atividades fim do negócio.
+·       Cadastro de Clientes no intuito de criação, armazenamento e acesso a um banco de dados virtual.
+·       Análise das demandas dos clientes em relação a horário, tipo de procedimentos e escolha dos profissionais.
+ 
+A seguir os requisitos não funcionais:
+·       Período de prazo de apresentação do produto mobile deve ser de 2 meses;
+·       O sistema deve atender à necessidade de  armazenamento de dados baseados em análise prévia do padrão de registros necessários aos clientes atendidos.
+·       Necessitará utilizar a rede internet para agendamento.
+·       Deve disponibilizar calendário com dias e horários para atendimento.
+·       Todos os agendamentos deverão ser realizados através do aplicativo mobile evitando a sobreposição de agendas.
+ 
+•  Quanto ao desempenho:??????
+Considerando que o produto é objetivo e funcional objetiva-se que ele seja rápido e responsivo o suficiente para atender às necessidades dos usuários. 
 
-•	Design:
-- Procurar-se-á que o aplicativo mobile possua uma interface dinâmica, ágil, responsiva e intuitiva. 
-Que ele leve o usuário a utilização de novas páginas conforme for percebendo o encaminhamento de sua demanda.Que a navegação seja intuitiva e que responda as dúvidas que por ventura surgirem no desenvolver do processo. 
-- As telas serão atrativas visualmente sem longos textos explanatórios e se utilizarão de poucas imagens em cores suaves, se adequando a missão da empresa que é a de proporcionar ao cliente um momento de lazer e bem-estar. 
-- A intenção é de que se adeque aos diversos tamanhos de tela. 
-- O projeto utilizará de alternâncias de cores às atividades já desenvolvidas, na medida que forem preenchidas para facilitar o entendimento das etapas do processo de agendamento. 
-- A dúvidas que forem percebidas estarão sinalizadas por símbolos de interrogação e consequente caixa de texto orientando no sistema pop-up.
+•  Quanto a segurança dos dados: 
+Os dados serão guardados utilizando-se de criptografia, gerenciamento de identidade e controle de acesso.
 
-Quanto ao cronograma:
-O periodo definido como entrega esta agendado adata de 17 de setembro de 2023, implicando em funcionalidade incompleta mas descrição total dos eventos que devem ser realizados para conclusao do projeto.
+•  Quanto ao Design e usabilidade:
+Procurar-se-á que o aplicativo mobile possua uma interface dinâmica, ágil, responsiva e intuitiva. Que ele leve o usuário a utilização de novas páginas conforme for percebendo o encaminhamento de sua demanda. A navegação será  intuitiva e responderá às dúvidas que por ventura surgirem no desenvolver do processo.  As telas serão atrativas visualmente sem longos textos explanatórios e se utilizarão de poucas imagens em cores suaves, se adequando a missão da empresa que é a de proporcionar ao cliente um momento de lazer e bem-estar.  A intenção é de que se adeque aos diversos tamanhos de tela.  O projeto utilizará de alternâncias de cores às atividades já desenvolvidas, na medida que forem preenchidas para facilitar o entendimento das etapas do processo de agendamento.  As dúvidas que forem percebidas estarão sinalizadas por símbolos de interrogação e consequente caixa de texto orientando no sistema pop-up. Utilizaremos as práticas de usabilidade através de navegabilidade com o uso dos códigos padrão já definidos na web.
 
-•	Quanto a segurança dos dados:
-Os dados serao guardados __________________________________________utilizando-se de criptografia, gerenciamento de identidade e controle de acesso.
+•  Quanto a Escalabilidade: 
+Entende-se que os requisitos de escalabilidade devem garantir que o sistema possa crescer para atender ao aumento na demanda sem perda significativa de desempenho e atendendo pelo menos 300 usuários simultâneos.
 
-•	Quanto as Funcionalidades Essenciais: 
-Serão utilizados links de acesso de integracao as páginas de "Home, Agendamento, busca (______?_____) e cadastro, alem de um acesso para applicativo de mensagens instantâneas ( colocar?_________)
+•  Quanto a Confiabilidade: 
+Atenção especial aos testes para avaliar a consistência do produto. Entende-se que seja possível manter o funcionamento contínuo  por 4 meses sem falhas críticas.
 
-•	TEREMOS ISSO??????  acessibilidade e engine?
-     Acessibilidade: Garantir que o projeto seja acessível para pessoas com deficiência é uma consideração importante. Isso envolve seguir diretrizes de acessibilidade da Web, como as estabelecidas pelo W3C.
-     SEO (Otimização de Mecanismos de Busca): O projeto deve ser otimizado para mecanismos de busca (por exemplo, Google). Isso inclui a utilização de palavras-chave relevantes, metadados adequados e outras práticas de SEO.
+•  Quanto a Manutenibilidade: 
+Ficará acordado em contrato o número e a relevância das manutenções  com vistas a atualizações, correções e melhorias no sistema.
+Há necessidade de definição das equipes e seu papeis dentro do processo de desenvolvimento do software mobile.
+A validação dos requisitos se dará junto com a equipe de gerenciamento, de front-end e back-end e consequente descrição da funcionalidade do aplicativo mobile.
+As mudanças serão inevitáveis, o que não significa que o processo de Engenharia de Requisitos adotado tenha sido falho.   
+Elas (as mudanças) podem ser percebidas quando da retroalimentação das análises e resultam da combinação de uma série de fatores como a evolução do entendimento dos analistas, mudança nas prioridades do cliente, mudanças organizacionais, tomada de decisão tardia, entre outras.
 
-Quanto a testagem e desenvolvimento do produto:
-A testagem será realizada em cada fase do desenvolvimento do processo junto a clientela, na intenção de evitar retrabalho e perda de foco na demanda do cliente, possibilitando adendos em número descrito em contrato e acordado em cronograma. 
+•  Quanto ao cronograma e documentação:
+O período definido como entrega será  dia 17 de setembro de 2023, implicando em funcionalidade incompleta mas descrição total dos eventos que devem ser realizados para conclusão do projeto.
+Serão utilizados instrumentos de metodologias ágeis do tipo Kanban.Utilizaremos check lists para perceber o andamento do processo junto ao cronograma. Existirá uma área remota para acompanhamento e participação do cliente.
+•  Quanto  QUAIS TECNOLOGIA UTILIZAMOS PARA EXECUTAR O PROJETO? NODE.JS, ANGULAR, IONIC E ....
 
-• Quanto a Manutenção e Atualização: 
-Será afirmado um contrato de desenvolvimento de aplicativo que comporte o atendimento das demandas do usuário, testagem e ajustes no período acordado em cronograma definido de comum acordo.
+•  Quanto às Funcionalidades Essenciais:
+Serão utilizados links de acesso de integração as páginas de "Home, Agendamento, busca (______?_____) e cadastro, além de um acesso para aplicativo de mensagens instantâneas/ redes sociais? ( colocar?_________)
+ 
+•  Quanto a acessibilidade e engine: nosso produto não prevê acessibilidade nem mecanismos de busca.
 
-•	Quanto a Hospedagem e Infraestrutura: (__________?____________)
-Selecionar um provedor de hospedagem adequado e configurar a infraestrutura necessária para suportar o projeto.
+•  Quanto à testagem e desenvolvimento do produto: A testagem será realizada em cada fase do desenvolvimento do processo junto a clientela, na intenção de evitar retrabalho e perda de foco na demanda do cliente, possibilitando adendos em número descrito em contrato e acordado em cronograma.
 
-•	Quanto a Documentação: 
-A documentação dos processos de desenvovimento do aplicativo mobile contará com trabalho de equipe front end e back end e de gerenciamento de projeto. Serão utilizados métodos agiéis de gerenciamento documentados e compartilhado com as equipes.
-Existirá uma área remota para acompanhamento e participação do cliente.
+• Quanto a Manutenção e Atualização:
+Será firmado um contrato de desenvolvimento de aplicativo que comporte o atendimento das demandas do usuário, testagem e ajustes no período acordado em cronograma definido de comum acordo.
+
+•  Quanto a Hospedagem e Infraestrutura: considerando o aplicativo como um produto simples sem necessidade de armazenamento e serviços de
+nuvem será hospedado em máquina local. Será usada a capacidade de armazenamento local do dispositivo móvel.
+
