@@ -10,8 +10,8 @@ export class CalendarService {
 
   constructor(private HttpClient: HttpClient) { }
 
-  getEvents(){
-    return this.HttpClient.get<any>(this.baseUrl + '/calendarEvents');
+  getEvents(month: number, year: number){
+    return this.HttpClient.post<any>(this.baseUrl + '/calendarEvents', {month, year});
   }
 
   postEvent(parameters: CalendarEvents){

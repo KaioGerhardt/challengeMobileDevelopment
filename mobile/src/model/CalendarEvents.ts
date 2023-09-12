@@ -1,11 +1,11 @@
 export class CalendarEvents{
-    date: Date;
+    date: String;
     title: String;
     description: String;
     isActive: number;
 
     constructor(){
-        this.date = new Date();
+        this.date = new Date().toISOString();
         this.title = "";
         this.description = "";
         this.isActive = 1;

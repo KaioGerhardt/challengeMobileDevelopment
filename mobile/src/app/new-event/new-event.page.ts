@@ -10,9 +10,7 @@ import { CalendarService } from 'src/services/calendar.service';
 })
 export class NewEventPage implements OnInit {
 
-  constructor(private navCtrl: NavController, private CalendarService: CalendarService) { 
-    this.newEvent.date = new Date()
-  }
+  constructor(private navCtrl: NavController, private CalendarService: CalendarService) { }
   today: Date = new Date();
 
   newEvent: CalendarEvents = new CalendarEvents();
@@ -21,17 +19,16 @@ export class NewEventPage implements OnInit {
   }
 
   cadastrarEvento() {
-    // Lógica para cadastrar o evento (pode ser uma chamada a um serviço, etc.)
-
-    console.log("dataa -> ", this.newEvent);
+    let resultCreate = null;
     this.CalendarService.postEvent(this.newEvent).subscribe(
       response => {
         console.log("response -> ", response);
       }
     )
 
-    // Após o cadastro, redireciona para a página do calendário ou outra página desejada
-    // this.navCtrl.navigateBack('/calendario');
+    if(resultCreate){
+      this.navCtrl.navigateBack('/calendario');
+    }
   }
 
 }
