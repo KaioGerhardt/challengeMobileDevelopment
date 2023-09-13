@@ -1,0 +1,44 @@
+/* login.page.scss */
+
+/* Estilize o container da página */
+ion-content {
+  background-color: #5955ad; /* Cor de fundo: 5955ad */
+  
+}
+
+
+/* Estilize o container do formulário */
+.login-container {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center; /* Alinha o rótulo à esquerda */
+}
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh; /* Defina a altura total da viewport */
+}
+
+/* Estilize o cabeçalho h2 */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #8172e3; /* Cor do cabeçalho: 8172e3 */
+}
+
+/* Estilize os campos de entrada */
+ion-item {
+  margin-bottom: 30px;
+  border-radius: 30px; /* Adicione bordas arredondadas */
+}
+
+.login-label {
+  font-weight: bold; /* Deixa o rótulo em negrito */
+  text-align: center; /* Alinha o rótulo à esquerda */
+}
+/* Ionic 5 ou superior */
+.rounded-button {
+  border-radius: 20%; /* Ajuste o valor conforme necessário */
+}
+
