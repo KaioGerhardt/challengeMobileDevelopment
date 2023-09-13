@@ -20,7 +20,6 @@ class Users {
             }else{
                 returnData = false;
             }
-            console.log("result login validate", userValidate);
         } catch (error) {
             console.error("ERROR loginValidate: ", error);
         } finally {
