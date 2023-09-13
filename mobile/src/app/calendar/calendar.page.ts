@@ -22,7 +22,6 @@ export class CalendarPage implements OnInit, AfterViewInit {
   constructor(private calendarEvents: CalendarEvents, private CalendarService: CalendarService, private router: Router) { }
 
   ngOnInit() {
-    console.log("passa aqui 2");
     let jwt = sessionStorage.getItem('jwtToken');
     if (jwt == null) {
       this.router.navigate(['/']);
@@ -62,7 +61,6 @@ export class CalendarPage implements OnInit, AfterViewInit {
   }
 
   async getCalendarEvents(arg: EventSourceFuncArg, successCallback: (eventInputs: EventInput[]) => void, failureCallback: (error: Error) => void) {
-    console.log("passa aqui 1");
   
     if (this.monthCalendar == undefined || this.yearCalendar == undefined) {
       const currentDate = new Date();
@@ -72,7 +70,6 @@ export class CalendarPage implements OnInit, AfterViewInit {
   
     try {
       const response = await this.CalendarService.getEvents(this.monthCalendar, this.yearCalendar).toPromise();
-      console.log("response --> ", response);
       successCallback(response.data);
     } catch (error) {
       console.error("Error fetching calendar events: ", error);

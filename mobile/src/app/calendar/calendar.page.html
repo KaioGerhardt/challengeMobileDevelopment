@@ -8,11 +8,13 @@
   <full-calendar #fullcalendar [options]="calendarOptions"></full-calendar>
 </ion-content>
 
-<!-- <ion-tabs slot="bottom">
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button>
-      <ion-icon name="calendar"></ion-icon>
-      <ion-label>Calendário</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs> -->
+<ion-tab-bar slot="bottom">
+  <ion-tab-button [routerLink]="['/calendar']">
+    <ion-icon name="calendar"></ion-icon>
+    <ion-label>Calendário</ion-label>
+  </ion-tab-button>
+  <ion-tab-button [routerLink]="['/new-event']">
+    <ion-icon name="add-outline"></ion-icon>
+    <ion-label>Atendimento</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
