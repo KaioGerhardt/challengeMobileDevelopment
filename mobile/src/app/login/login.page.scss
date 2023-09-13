@@ -1,44 +1,76 @@
 /* login.page.scss */
 
-/* Estilize o container da página */
 ion-content {
-  background-color: #5955ad; /* Cor de fundo: 5955ad */
+  background-color: #5955ad; 
   
 }
-
-
-/* Estilize o container do formulário */
-.login-container {
-  max-width: 300px;
+@media screen and (min-height: 672px) {
+.logo {
+  min-width: 50%;
+  min-height: 50%;
+  height: 20vh;
   margin: 0 auto;
-  text-align: center; /* Alinha o rótulo à esquerda */
+  display: flex;
 }
 .login-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh; /* Defina a altura total da viewport */
+  height: 45vh; 
+}
 }
 
-/* Estilize o cabeçalho h2 */
+@media screen and (min-height: 672px) {
+  .logo {
+    min-width: 50%;
+    min-height: 50%;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+  }
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh; 
+  }
+  }
+@media screen and (max-height: 671px) {
+  .logo {
+    max-width: 50%;
+    max-height: 50%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+  }
+
+}
+.login-container {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center; 
+}
 h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #8172e3; /* Cor do cabeçalho: 8172e3 */
+  color: #8172e3; 
 }
 
-/* Estilize os campos de entrada */
 ion-item {
   margin-bottom: 30px;
-  border-radius: 30px; /* Adicione bordas arredondadas */
+  border-radius: 30px; 
 }
 
 .login-label {
-  font-weight: bold; /* Deixa o rótulo em negrito */
-  text-align: center; /* Alinha o rótulo à esquerda */
+  font-weight: bold; 
+  text-align: center; 
 }
-/* Ionic 5 ou superior */
 .rounded-button {
-  border-radius: 20%; /* Ajuste o valor conforme necessário */
+  border-radius: 20%; 
 }
 
