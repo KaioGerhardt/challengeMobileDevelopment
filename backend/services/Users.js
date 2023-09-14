@@ -31,9 +31,12 @@ class Users {
 
     async createUser(name) {
         try{
-            await this.DatabaseConnection.query(`INSERT INTO user(name, email, password) VALUES ('${name}', '${this.email}', '${this.password}')`);
+            let isCreated = await this.DatabaseConnection.query(`INSERT INTO user(name, email, password) VALUES ('${name}', '${this.email}', '${this.password}')`);
+            return true;
+
         }catch(error){
             console.log("ERROR createUser: ", error);
+            return false;
         }finally{
             this.DatabaseConnection.close();
         }
