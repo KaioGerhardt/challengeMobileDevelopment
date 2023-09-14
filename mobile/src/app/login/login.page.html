@@ -6,7 +6,7 @@
         <ion-label position="floating">Email</ion-label>
         <ion-input type="text" [(ngModel)]="user.email" id="username" name="username"></ion-input>
       </ion-item>
-      
+
       <ion-item>
         <ion-label position="floating">Senha</ion-label>
         <ion-input type="password" [(ngModel)]="user.password" id="password" name="password"></ion-input>
@@ -15,6 +15,9 @@
       <ion-button expand="full" class="rounded-button" (click)="login()">Login</ion-button>
     </form>
   </div>
+
+
+  <ion-button routerLink="/new-user">Cadastre-se</ion-button>
 
   <!-- <ion-router-outlet></ion-router-outlet> -->
 </ion-content>
