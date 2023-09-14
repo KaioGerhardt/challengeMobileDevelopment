@@ -25,12 +25,10 @@ export class LoginPage implements OnInit {
   }
 
   login() {
-    console.log("teste");
     let userData = this.user;
 
     this.LoginService.login(userData).subscribe(
       response => {
-        console.log("reponse request", response);
         if (response.isLoged) {
           sessionStorage.setItem('jwtToken', response.token);
           this.router.navigate(['/calendar']);
@@ -42,7 +40,6 @@ export class LoginPage implements OnInit {
         }
       }
     );
-    console.log("valores -> ", this.user);
 
   }
 }

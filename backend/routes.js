@@ -46,7 +46,6 @@ router.post('/calendarEvents', async (req, res) => {
 router.post('/newEvent', async (req, res) => {
     try{
         let requestData = req.body;
-        console.log("chega no post event");
         let calendar = new CalendarService();
 
         let result = await calendar.newEvent(requestData);
