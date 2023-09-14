@@ -1,19 +1,23 @@
 <ion-content>
   <div class="ion-padding login-container">
-    <h2>Login</h2>
-    <form>
-      <ion-item>
-        <ion-label position="floating">Email</ion-label>
-        <ion-input type="text" [(ngModel)]="user.email" id="username" name="username"></ion-input>
-      </ion-item>
+    <h2>Bem-vindo ao Estética</h2>
+    <img src="assets/icon/logo.png" class="logo" alt="Logo">
+    <div class="login-form">
 
-      <ion-item>
-        <ion-label position="floating">Senha</ion-label>
-        <ion-input type="password" [(ngModel)]="user.password" id="password" name="password"></ion-input>
-      </ion-item>
+      <form>
+        <ion-label class="login-label">Email</ion-label>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="user.email" id="username" name="username"></ion-input>
+        </ion-item>
 
-      <ion-button expand="full" class="rounded-button" (click)="login()">Login</ion-button>
-    </form>
+        <ion-label class="login-label">Senha</ion-label>
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="user.password" id="password" name="password"></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" shape="round" class="rounded-button" (click)="login()">Login</ion-button>
+      </form>
+    </div>
   </div>
 
 

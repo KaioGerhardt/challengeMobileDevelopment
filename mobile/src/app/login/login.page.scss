@@ -1,0 +1,76 @@
+/* login.page.scss */
+
+ion-content {
+  background-color: #5955ad; 
+  
+}
+@media screen and (min-height: 672px) {
+.logo {
+  min-width: 50%;
+  min-height: 50%;
+  height: 20vh;
+  margin: 0 auto;
+  display: flex;
+}
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh; 
+}
+}
+
+@media screen and (min-height: 672px) {
+  .logo {
+    min-width: 50%;
+    min-height: 50%;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+  }
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh; 
+  }
+  }
+@media screen and (max-height: 671px) {
+  .logo {
+    max-width: 50%;
+    max-height: 50%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+  }
+
+}
+.login-container {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center; 
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #8172e3; 
+}
+
+ion-item {
+  margin-bottom: 30px;
+  border-radius: 30px; 
+}
+
+.login-label {
+  font-weight: bold; 
+  text-align: center; 
+}
+.rounded-button {
+  border-radius: 20%; 
+}
+
