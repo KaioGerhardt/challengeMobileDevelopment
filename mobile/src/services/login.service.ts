@@ -19,4 +19,8 @@ export class LoginService {
   login(user: Users): Observable<any> {
     return this.request(user, '/login');
   }
+
+  newUser(user: Users){
+    return this.request(user, '/newUser');
+  }
 }
