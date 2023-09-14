@@ -6,12 +6,9 @@ ion-title {
   }
   
   full-calendar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-  .fc-day-today {
-    background: #FFF !important;
-    border: none !important;
+    --fc-today-bg-color: #f2eafd;
+    --fc-button-bg-color: #8172e3;
+    --fc-button-hover-bg-color: #5955ad;
+    --fc-event-bg-color: #5955ad;
+    --fc-event-border-color: #5955ad;
   }
