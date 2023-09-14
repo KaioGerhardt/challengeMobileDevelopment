@@ -1,0 +1,17 @@
+
+ion-title {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center; 
+  }
+  
+  full-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .fc-day-today {
+    background: #FFF !important;
+    border: none !important;
+  }
