@@ -60,6 +60,25 @@ router.post('/newEvent', async (req, res) => {
         console.error("Error: ", error);
         res.status(500).json(error);
     }
+});
+
+router.post('/newUser', async (req, res) => {
+    try{
+        let requestData = req.body;
+        let user = new Users(requestData.email, requestData.password);
+        let result = await user.createUser(requestData.name);
+
+        if(result){
+            res.status(200).json({created: true});
+        }else{
+            res.status(200).json({created: false});
+        }
+
+
+    }catch(error){
+        console.error("Error: ", error);
+        res.status(500).json(error);
+    }
 })
 
 module.exports = router;
