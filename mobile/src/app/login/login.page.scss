@@ -20,21 +20,6 @@ ion-content {
 }
 }
 
-@media screen and (min-height: 672px) {
-  .logo {
-    min-width: 50%;
-    min-height: 50%;
-    height: 20vh;
-    margin: 0 auto;
-    display: flex;
-  }
-  .login-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45vh; 
-  }
-  }
 @media screen and (max-height: 671px) {
   .logo {
     max-width: 50%;
