@@ -1,0 +1,43 @@
+
+ion-title {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; 
+  }
+
+  .login-label {
+    font-weight: bold; 
+    text-align: center; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-height: 672px) {
+    .login-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75vh; 
+    }
+    }
+    
+    @media screen and (max-height: 671px) {
+
+      .login-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px; 
+      }
+    
+    }
+
+    .rounded-button {
+      border-radius: 20%; 
+    }
+    ion-item {
+      margin-bottom: 30px;
+      border-radius: 30px; 
+    }
+    
+    

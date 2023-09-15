@@ -48,6 +48,12 @@ export class CalendarPage implements OnInit, AfterViewInit {
     height: 'auto',
     locale: 'pt-br',
     contentHeight: 'auto',
+    headerToolbar:
+    {
+      left: '',
+      center: 'title',
+      right: 'prev,next'
+    },
     events: this.getCalendarEvents.bind(this),
     datesSet: this.handleDatesSet.bind(this),
   };
