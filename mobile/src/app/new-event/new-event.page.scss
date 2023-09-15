@@ -1,7 +1,21 @@
 
 ion-title {
-    max-width: 300px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center; 
+  }
+  .ion-form{
+    color: #8172e3!important;
+  }
+  ion-datetime{
+    padding-top: 20px;
+    background-color: #ffffff;
+    --wheel-highlight-background:#DACBEF
+    --wheel-fade-background-rgb: 255,255,255
+    --placeholder-color: #DACBEF;
+    font-weight: bold;
+  }
+  .rounded-button {
+    border-radius: 20%; 
   }
   

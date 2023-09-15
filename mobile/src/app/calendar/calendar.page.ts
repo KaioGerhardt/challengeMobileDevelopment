@@ -52,13 +52,7 @@ export class CalendarPage implements OnInit, AfterViewInit {
     {
       left: '',
       center: 'title',
-      right: ''
-    },
-    footerToolbar:
-    {
-      left: '',
-      center: 'prevYear,prev,today,next,nextYear',
-      right: ''
+      right: 'prev,next'
     },
     events: this.getCalendarEvents.bind(this),
     datesSet: this.handleDatesSet.bind(this),
