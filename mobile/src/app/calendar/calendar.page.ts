@@ -26,6 +26,8 @@ export class CalendarPage implements OnInit, AfterViewInit {
     if (jwt == null) {
       this.router.navigate(['/']);
     }
+
+    this.getCalendarEvents.bind(this);
   }
 
   ngAfterViewInit() {
