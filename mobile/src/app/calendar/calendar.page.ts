@@ -68,6 +68,10 @@ export class CalendarPage implements OnInit, AfterViewInit {
     this.yearCalendar = currentDate.getFullYear();
   }
 
+  refreshPage(){
+    location.reload();
+  }
+
   async getCalendarEvents(arg: EventSourceFuncArg, successCallback: (eventInputs: EventInput[]) => void, failureCallback: (error: Error) => void) {
   
     if (this.monthCalendar == undefined || this.yearCalendar == undefined) {

@@ -8,6 +8,10 @@
   <full-calendar #fullcalendar [options]="calendarOptions"></full-calendar>
 </ion-content>
 
+<ion-button expand="full" shape="round" class="rounded-button" expand="full" (click)="refreshPage()" >
+  Recarregar
+</ion-button>
+
 <ion-tab-bar slot="bottom">
   <ion-tab-button [routerLink]="['/calendar']">
     <ion-icon name="calendar" class="tab-item"></ion-icon>

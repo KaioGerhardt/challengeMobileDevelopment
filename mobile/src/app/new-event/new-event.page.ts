@@ -18,17 +18,16 @@ export class NewEventPage implements OnInit {
   ngOnInit() {
   }
 
-  cadastrarEvento() {
+  async cadastrarEvento() {
     let resultCreate = null;
-    this.CalendarService.postEvent(this.newEvent).subscribe(
+    await this.CalendarService.postEvent(this.newEvent).subscribe(
       response => {
-        console.log("response -> ", response);
+        resultCreate = response.response
+        if(resultCreate){
+          this.navCtrl.navigateBack('/calendar');
+        }
       }
     )
-
-    if(resultCreate){
-      this.navCtrl.navigateBack('/calendario');
-    }
   }
 
 }
